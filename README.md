@@ -37,7 +37,7 @@ cd geoserver-2.16.1/bin
 - For the bounding boxes, select `Compute from data` and `Compute from native bounds` for the two boxes
 - Navigate to the WMS Settings and ensure that the default style is a line and then press save
 - If you go to `Layer Preview`, you should be able to select openlayers and view your map. Mine looks like this
-![WMS Layer](src/wmslayer.PNG)
+![WMS Layer](src/images/wmslayer.PNG)
 
 ## Possible Errors
 - The main problem that can arise is not having, or having a corrupt version of Java on your computer. Ensure that you have Java 8 or follow this link to install it https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html

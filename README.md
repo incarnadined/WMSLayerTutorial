@@ -29,7 +29,15 @@ cd geoserver-2.16.1/bin
 - To run your server, type ``npm start`` and visit ``localhost:1234``
 
 - To complete this project, you will need a dataset in the format of a shapefile. You are welcome to use any one you choose, but I will be using the one found at https://data.gov.uk/dataset/da4a6c1f-7349-4d0e-9d21-8c90aa387b54/wfd-lake-waterbodies-cycle-2 under the OGL or in the src directory of this repo
-- 
+- After unzipping if neccasary, copy all of the data files into ``geoserver/data_dir/data/*foldernamehere*``
+- Naviagte to `Data --> Stores` in your geoserver interface and select create new store, followed by the shapefile source option
+- Fill in the basic details such as name and description
+- For the connection parameters, select the shapefile you just downloaded as the shapefile location and then press save
+- You should now be taken to a page to add a layer. Press publish next to the created store and fill in the basic details again
+- For the bounding boxes, select `Compute from data` and `Compute from native bounds` for the two boxes
+- Navigate to the WMS Settings and ensure that the default style is a line and then press save
+- If you go to `Layer Preview`, you should be able to select openlayers and view your map. Mine looks like this
+![WMS Layer](src/wmslayer.PNG)
 
 ## Possible Errors
 - The main problem that can arise is not having, or having a corrupt version of Java on your computer. Ensure that you have Java 8 or follow this link to install it https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html

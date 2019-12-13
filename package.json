@@ -1,0 +1,26 @@
+{
+  "name": "wmslayertutorial",
+  "version": "1.0.0",
+  "description": "GCI WMS Layer Tutorial with OpenLayers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incarnadined/WMSLayerTutorial.git"
+  },
+  "author": "incarnadine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/incarnadined/WMSLayerTutorial/issues"
+  },
+  "homepage": "https://github.com/incarnadined/WMSLayerTutorial#readme",
+  "dependencies": {
+    "ol": "^6.1.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

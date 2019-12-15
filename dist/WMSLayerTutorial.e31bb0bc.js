@@ -60004,21 +60004,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var layers = [new _layer.Tile({
   source: new _OSM.default()
 }), new _layer.Image({
+  extent: [-13884991, 2870341, -7455066, 6338219],
   source: new _ImageWMS.default({
-    url: 'http://192.168.80.130:8080/geoserver/wms/incarnadine',
+    url: 'http://192.168.80.130:8080/geoserver/wms?',
     params: {
-      'LAYERS': 'incarnadine:water'
+      'LAYERS': 'incarnadine:WFD_Lake_Water_Bodies_Cycle_2'
     },
     ratio: 1,
-    serverType: 'geoserver'
+    serverType: 'geoserver',
+    projection: "EPSG:27700"
   })
 })];
 var map = new _Map.default({
   layers: layers,
   target: 'map',
+  projection: "EPSG:27700",
   view: new _View.default({
     center: [-500000, 7130500],
-    zoom: 7
+    zoom: 4
   })
 });
 },{"ol/ol.css":"node_modules/ol/ol.css","ol/Map":"node_modules/ol/Map.js","ol/View":"node_modules/ol/View.js","ol/layer":"node_modules/ol/layer.js","ol/source/ImageWMS":"node_modules/ol/source/ImageWMS.js","ol/source/OSM":"node_modules/ol/source/OSM.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -60049,7 +60052,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62415" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52045" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

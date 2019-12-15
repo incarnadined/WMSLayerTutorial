@@ -36,8 +36,11 @@ cd geoserver-2.16.1/bin
 - You should now be taken to a page to add a layer. Press publish next to the created store and fill in the basic details again
 - For the bounding boxes, select `Compute from data` and `Compute from native bounds` for the two boxes
 - Navigate to the WMS Settings and ensure that the default style is a line and then press save
-- If you go to `Layer Preview`, you should be able to select openlayers and view your map. Mine looks like this
+- If you go to `Layer Preview`, you should be able to select openlayers and view your map. If you used the zip file provided, it should look like this:
 ![WMS Layer](src/images/wmslayer.PNG)
+
+- If you find the a and img tags in ``index.html``, cahnge their urls to point to your new GeoServer object and you are finished!
+
 
 ## Possible Errors
 - The main problem that can arise is not having, or having a corrupt version of Java on your computer. Ensure that you have Java 8 or follow this link to install it https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html
